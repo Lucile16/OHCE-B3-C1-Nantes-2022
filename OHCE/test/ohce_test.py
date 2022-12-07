@@ -6,7 +6,8 @@ class OhceTest(unittest.TestCase):
     def test_renvoi_miroir(self):
         # Quand on saisit une chaîne
         o = ohce()
-        resultat = o.palindrome("test")
+        chaine = input("Entrez un mot : ")
+        resultat = o.palindrome(chaine)
         # Alors celle-ci est renvoyée en miroir
         return self.assertEqual("tset", resultat)
 
